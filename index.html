@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio do Urso 2</title>
+    <style>
+        h1{
+            background-color: black;
+            color: white;
+            padding: 10px;
+        }
+        .urso {
+            display: none;
+        }
+
+        #img-urso {
+            width: 100px;
+            transform: rotate(10deg);
+        }
+
+        #escada {
+            position: relative;
+            z-index: 0;
+        }
+
+        .container {
+            text-align: center;
+            margin: auto;
+            width: 1000px;
+            text-align: center;
+            position: relative;
+        }
+
+        #img-urso {
+            position: absolute;
+            top: 550px;
+            left: 100px;
+            z-index: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container" id="container">
+        <h1>Desafio do Urso 2</h1>
+
+        <!--Aprimorando o cache, já carregando as img no navegador, mesmo sem exibir-->
+        <img src="./img/urso1.png" class="urso" alt="">
+        <img src="./img/urso2.png" class="urso" alt="">
+        <img src="./img/urso3.png" class="urso" alt="">
+
+        <div id="margem">
+            <img src="./img/urso1.png" alt="" id="img-urso">
+        </div>
+
+        <div>
+            <img id="escada"
+                src="http://2.bp.blogspot.com/-VD3wd3CoZqU/T7VcvXJkYSI/AAAAAAAABeE/BLADxRK8f-k/s1600/escada+com+volume.jpg"
+                alt="">
+        </div>
+
+    </div>
+    <script src="./js/urso.js"></script>
+</body>
+
+</html>
